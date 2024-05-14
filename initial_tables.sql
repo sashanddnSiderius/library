@@ -68,3 +68,15 @@ create table Reservation (
     id_book int,
     id_member int
 );
+
+alter table Review
+add foreign key (id_book) references Book (id),
+add foreign key (id_member) references Member (id);
+
+alter table Loan
+add foreign key (id_book) references Book (id),
+add foreign key (id_member) references Member (id);
+
+alter table Reservation
+add foreign key (id_book) references Book (id),
+add foreign key (id_member) references Member (id);
