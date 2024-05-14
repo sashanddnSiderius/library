@@ -48,7 +48,7 @@ create table Review (
     review_text varchar (200),
     review_date date,
     id_book int,
-    id_client int
+    id_member int
 );
 
 create table Loan (
@@ -57,7 +57,7 @@ create table Loan (
     return_date date,
     late_fee double,
     id_book int,
-    id_client int
+    id_member int
 );
 
 create table Reservation (
@@ -66,5 +66,5 @@ create table Reservation (
     pickup_date date,
     status varchar(20),
     id_book int,
-    id_client int
+    id_member int
 );
